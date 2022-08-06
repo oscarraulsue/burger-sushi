@@ -3,6 +3,7 @@ import { Grid } from '@nextui-org/react';
 
 import MainLayout from '../templates/MainLayout';
 import { Produts } from '../../interfaces/products';
+import { ProductCard } from '../molecules';
 
 
 interface Props {
@@ -14,7 +15,7 @@ const HomePage: NextPage<Props> = ({ products }) => {
   return (
     <MainLayout title='Listado de Pokémons'>
       
-      <Grid.Container gap={ 2 } justify='flex-start'>
+      <Grid.Container gap={ 1 }  justify='flex-start'>
         {
           products.map( ( product ) => (
             <ProductCard key={ product.ID } product={ product } />

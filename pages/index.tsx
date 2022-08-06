@@ -9,6 +9,7 @@ import {
 
 import { Produts } from "../src/interfaces/products";
 import MainLayout from "../src/component/templates/MainLayout";
+import HomePage from "../src/component/organism/HomePage";
 interface Props {
   products: Produts[];
 }
@@ -17,9 +18,7 @@ const Home: NextPage<Props> = ({ products }) => {
   console.log(products);
 
   return (
-    <MainLayout>
-      <Home products={products} />
-    </MainLayout>
+      <HomePage products={products} />
   );
 };
 

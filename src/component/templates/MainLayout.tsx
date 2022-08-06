@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import Head from "next/head"
+import { Navbar } from "../organism";
 
 interface Props {
     title?: string;
@@ -24,10 +25,10 @@ const MainLayout: FC<Props> = ({children}) => {
 
     </Head>
   
-    {/* <Navbar /> */}
+     <Navbar />
 
     <main style={{
-      padding: '0px 20px'
+      padding: '60px 10px'
     }}>
         { children }
     </main>
